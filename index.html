@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · Privacy Policy — Yico Photo Slide Frame</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1c1c1e; --muted:#5c5c63; --line:#e3e3e8;
+    --brand:#1E9E93; --card:#f7f8f9; --ok:#1E9E93; --no:#c0392b;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#16181a; --fg:#eceff1; --muted:#a5adb5; --line:#2c3136;
+           --card:#1e2226; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+         "Hiragino Sans GB","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:40px 20px 80px}
+  header{border-bottom:2px solid var(--brand); padding-bottom:18px; margin-bottom:28px}
+  h1{font-size:1.65rem; margin:0 0 8px; letter-spacing:.2px}
+  .sub{color:var(--muted); font-size:.92rem}
+  .sub b{color:var(--fg); font-weight:600}
+  h2{font-size:1.18rem; margin:34px 0 12px; padding-left:11px;
+     border-left:4px solid var(--brand); line-height:1.35}
+  h3{font-size:1rem; margin:22px 0 8px}
+  p{margin:10px 0}
+  ul{margin:10px 0; padding-left:22px}
+  li{margin:6px 0}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:.94rem}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:left;
+        vertical-align:top}
+  th{background:var(--card); font-weight:600; white-space:nowrap}
+  code{background:var(--card); padding:1px 5px; border-radius:4px;
+       font-size:.88em; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .lead{background:var(--card); border-radius:10px; padding:16px 18px;
+        margin:18px 0; font-size:1.02rem}
+  .lead strong{color:var(--brand)}
+  .no{color:var(--no); font-weight:600}
+  .yes{color:var(--ok); font-weight:600}
+  .note{color:var(--muted); font-size:.9rem; border-left:3px solid var(--line);
+        padding-left:12px; margin:16px 0}
+  a{color:var(--brand)}
+  .lang{display:flex; gap:8px; margin:0 0 26px}
+  .lang button{
+    font:inherit; font-size:.88rem; cursor:pointer;
+    padding:6px 14px; border-radius:999px; border:1px solid var(--line);
+    background:var(--card); color:var(--fg);
+  }
+  .lang button[aria-pressed="true"]{background:var(--brand); color:#fff;
+    border-color:var(--brand)}
+  footer{margin-top:46px; padding-top:18px; border-top:1px solid var(--line);
+         color:var(--muted); font-size:.88rem}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>隐私政策 · Privacy Policy</h1>
+  <div class="sub">
+    <b>Yico Photo Slide Frame</b>（下称"本应用" / the "App"）<br>
+    最后更新 Last updated：<b>2026-10-12</b> ｜ 生效版本 Version：<b>V1.5</b>
+  </div>
+</header>
+
+<div class="lang" role="group" aria-label="Language">
+  <button id="btn-zh" aria-pressed="true" onclick="setLang('zh')">中文</button>
+  <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ======================= 中文 ======================= -->
+<main id="zh">
+
+<div class="lead">
+  <strong>一句话总结：</strong>本应用<strong>不收集</strong>你的照片，<strong>不上传</strong>你的照片，
+  不做用户画像，<strong>没有账号体系，没有广告，没有第三方分析 SDK</strong>。
+  唯一的对外网络请求是天气（可选，且只发城市名）。
+</div>
+
+<h2>1. 我们<u>不</u>收集什么（先说这个）</h2>
+
+<table>
+  <tr><th>项目</th><th>状态</th></tr>
+  <tr><td>你的照片 / 图片内容</td><td class="no">不收集、不上传、不分析</td></tr>
+  <tr><td>你的音乐文件</td><td class="no">不收集、不上传</td></tr>
+  <tr><td>通讯录 / 通话记录 / 短信</td><td class="no">不申请、不读取</td></tr>
+  <tr><td>位置信息 / GPS</td><td class="no">不申请定位权限（见 §3）</td></tr>
+  <tr><td>设备标识符（IMEI / Android ID / 广告 ID）</td><td class="no">不读取</td></tr>
+  <tr><td>你的账号 / 邮箱 / 手机号</td><td class="no">本应用没有账号体系</td></tr>
+  <tr><td>使用行为统计（埋点）</td><td class="no">无任何分析 SDK</td></tr>
+  <tr><td>崩溃上报</td><td class="no">无 Crashlytics / Sentry 等</td></tr>
+  <tr><td>广告标识 / 广告 SDK</td><td class="no">无广告</td></tr>
+</table>
+
+<p class="note">
+  这不是"暂时还没接"，而是产品定位的一部分：本应用是一次性买断制，
+  收入来自一次性购买，<b>不需要靠数据变现</b>。不收集数据不是成本，
+  而是我们相对免费相框应用的核心差异。
+</p>
+
+<h2>2. 你的照片与音乐：只在本机</h2>
+<ul>
+  <li><b>照片</b>：本应用通过 Android 系统相册接口（<code>MediaStore</code>）
+      读取你选择的图片，用于在屏幕上显示。图片<b>始终留在你的设备上</b>，
+      不会被复制到别处、不会被上传、不会用于训练任何模型。</li>
+  <li><b>音乐</b>：内置曲目随安装包分发（CC0 / 公共领域，见应用内「音乐与版权」页）。
+      你自己导入的音乐只是设备上的文件路径引用，<b>文件本身不会被上传</b>。</li>
+  <li><b>设置</b>：转场选择、播放时长、亮度调度等应用设置保存在应用私有目录，
+      卸载即删除。配置文件导出功能由<b>你本人</b>主动触发并选择保存位置，
+      文件只落在你指定的地方。</li>
+</ul>
+
+<h2>3. 唯一的对外网络请求：天气（可选）</h2>
+<p>天气浮层<b>默认关闭</b>。只有当你主动打开天气浮层并填写城市后，
+   本应用才会向 <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> 发起请求：</p>
+<table>
+  <tr><th>发送内容</th><th>用途</th></tr>
+  <tr><td>你填写的城市名（如"杭州"，纯文本）</td><td>解析成经纬度</td></tr>
+  <tr><td>解析出的经纬度（保留 4 位小数，约 11 米精度）</td><td>查询当前气温与天气</td></tr>
+</table>
+<p class="note">
+  本应用<b>不申请定位权限</b>（<code>ACCESS_FINE_LOCATION</code> /
+  <code>ACCESS_COARSE_LOCATION</code> 均未在清单中声明）。天气用的坐标来自
+  <b>城市名解析</b>，不是你设备的真实位置 —— 所以它既不知道你在哪，也无法定位到你。
+  Open-Meteo 是开源气象服务，其隐私做法见其官网。本应用<b>不向它发送</b>任何
+  设备标识、用户标识或你的照片。
+</p>
+
+<h2>4. 权限说明（逐条对应 Play 的"敏感权限"申报）</h2>
+<table>
+  <tr><th>权限</th><th>用途</th><th>能否拒绝</th></tr>
+  <tr><td><code>READ_MEDIA_IMAGES</code>（Android 13+）<br>
+          <code>READ_EXTERNAL_STORAGE</code>（≤ 12）</td>
+      <td>读取你选择的照片来播放</td>
+      <td>可拒绝（拒绝则无法显示照片）</td></tr>
+  <tr><td><code>INTERNET</code></td>
+      <td>唯一用途是可选天气浮层（只发送城市名，见 §3）。本应用<b>自己显式声明</b>它，
+          不依赖任何第三方组件代为提供</td>
+      <td>系统级</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code><br>
+          <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+      <td>常驻播放：相框要能长时间挂在屏幕上</td>
+      <td>系统级，随安装生效</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>播放期间保持屏幕点亮</td><td>系统级</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td>
+      <td>开机后按你的设置恢复常驻（<b>默认关闭</b>）</td><td>系统级</td></tr>
+  <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td>
+      <td>向系统申请"不要冻结本应用"，否则长期挂机会被系统杀掉</td>
+      <td>可拒绝（拒绝后可能被系统中断）</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code>（Android 13+）</td>
+      <td>常驻播放时显示那条"正在播放"通知（前台服务要求）</td>
+      <td>可拒绝</td></tr>
+</table>
+
+<p class="note">
+  <b>关于「网络共享」</b>（SMB / WebDAV，专业版功能）的额外说明：连接你自己家里的 NAS 时，
+  地址、账号与密码<b>都只保存在这台设备上</b>（密码经系统密钥库加密，且不随配置文件导出）；
+  服务器地址与凭据<b>不会</b>发往任何第三方，本应用也不收集它们。
+  家庭 NAS 的 WebDAV 通常只提供明文 http，因此本应用允许与<b>你自己手输的局域网地址</b>
+  之间使用明文连接 —— 它不会把任何内容发往互联网。若你的 NAS 使用 https 而证书是自签的，
+  本应用会放行该证书（家用设备几乎都是自签）——<b>这意味着这条链路上无法防中间人攻击</b>。
+  如果你在意这一点，请只在<b>可信的家庭局域网</b>内使用该功能，或改用 SMB
+  （本应用对 SMB 同样只做局域网直连）。
+</p>
+
+<p><b>本应用不申请</b>：定位、相机、麦克风、通讯录、日历、电话、短信。
+   需要"屏幕保护程序"能力时用的是系统已有的 <code>DreamService</code> 机制，不额外申请权限。</p>
+
+<h2>5. 儿童</h2>
+<p>本应用不面向儿童，也<b>不收集任何人的个人信息</b>（见 §1），因此不涉及儿童数据的特殊处理。
+   家长可放心让孩子也用它显示照片 —— 它不上传任何东西。</p>
+
+<h2>6. 数据删除</h2>
+<p>由于本应用<b>不收集、不存储任何服务器端数据</b>，没有"你的数据"需要删除。</p>
+<ul>
+  <li>应用内数据（设置、收藏标记、隐藏标记、撤销记录、专业版权益缓存）全部在设备私有目录，
+      <b>卸载应用即全部删除</b>。</li>
+  <li>如需只清除设置而不卸载：Android 系统设置 → 应用 → 本应用 → 存储 → 清除数据。</li>
+</ul>
+
+<h2>7. 政策变更</h2>
+<p>若未来版本增加了任何收集行为（例如接入云端相册，届时必然需要传输照片），
+   本政策会<b>在变更生效前更新</b>，并在应用内以显著方式提示。</p>
+<p>本应用的<b>既有承诺不变</b>：核心功能（本机相册、选文件夹、随机看全、隐藏某张、真屏保、
+   常驻播放、内置 20 首音乐）<b>永久免费，且永不加水印、不设时长限制、不弹广告</b>。</p>
+
+<h2>8. 联系我们</h2>
+<p>如有隐私相关问题，请联系：<b><a href="mailto:renafool@gmail.com">renafool@gmail.com</a></b></p>
+
+<footer>
+  Google Play 结算由 Google 处理，它会按 Google 自己的政策收集必要信息（如购买凭证）。
+  这是<b>平台行为</b>，不是本应用主动收集 —— 我们<b>不接收</b>你的姓名、邮箱或支付信息，
+  只收到一个"是否已购买"的布尔结论 + 购买令牌（用于防重复购买与恢复购买）。
+</footer>
+
+</main>
+
+<!-- ======================= English ======================= -->
+<main id="en" hidden>
+
+<div class="lead">
+  <strong>In one sentence:</strong> this App does <strong>not</strong> collect your photos,
+  does <strong>not</strong> upload your photos, does no profiling, has
+  <strong>no accounts, no ads, and no third-party analytics SDK</strong>.
+  The only outbound request is an optional weather lookup that sends a city name only.
+</div>
+
+<h2>1. What we do <u>not</u> collect</h2>
+<table>
+  <tr><th>Item</th><th>Status</th></tr>
+  <tr><td>Your photos / image content</td><td class="no">Not collected, not uploaded, not analysed</td></tr>
+  <tr><td>Your music files</td><td class="no">Not collected, not uploaded</td></tr>
+  <tr><td>Contacts / call log / SMS</td><td class="no">Not requested, not read</td></tr>
+  <tr><td>Location / GPS</td><td class="no">No location permission requested (see §3)</td></tr>
+  <tr><td>Device identifiers (IMEI / Android ID / Ad ID)</td><td class="no">Not read</td></tr>
+  <tr><td>Your account / email / phone number</td><td class="no">The App has no account system</td></tr>
+  <tr><td>Usage analytics</td><td class="no">No analytics SDK of any kind</td></tr>
+  <tr><td>Crash reporting</td><td class="no">No Crashlytics / Sentry, etc.</td></tr>
+  <tr><td>Advertising ID / ad SDK</td><td class="no">No ads</td></tr>
+</table>
+<p class="note">
+  This is not "not wired up yet" &mdash; it is part of the product's positioning. The App is a
+  one-time purchase; revenue comes from that purchase, so we have <b>no need to monetise data</b>.
+  Not collecting data is a feature, not a cost &mdash; and it is our core difference from
+  free photo-frame apps.
+</p>
+
+<h2>2. Your photos and music stay on your device</h2>
+<ul>
+  <li><b>Photos</b>: the App reads the images you select through Android's system gallery API
+      (<code>MediaStore</code>) in order to show them on screen. Your images
+      <b>never leave your device</b> &mdash; they are not copied elsewhere, not uploaded,
+      and not used to train any model.</li>
+  <li><b>Music</b>: built-in tracks ship inside the install package (CC0 / public domain &mdash;
+      see the in-app "Music &amp; Licences" page). Music you import yourself is only a
+      reference to a file path on your device; <b>the file itself is never uploaded</b>.</li>
+  <li><b>Settings</b>: transitions, slide duration, brightness schedule and similar settings are
+      stored in the App's private directory and are removed when you uninstall. The config-file
+      export is triggered <b>by you</b>, and the file is written only where you choose.</li>
+</ul>
+
+<h2>3. The only outbound request: optional weather</h2>
+<p>The weather overlay is <b>off by default</b>. Only after you enable it and type a city does the App
+   contact <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>:</p>
+<table>
+  <tr><th>What is sent</th><th>Purpose</th></tr>
+  <tr><td>The city name you typed (plain text, e.g. "Hangzhou")</td><td>Resolve to coordinates</td></tr>
+  <tr><td>Resolved coordinates (4 decimal places, approx. 11 m precision)</td><td>Fetch current temperature / conditions</td></tr>
+</table>
+<p class="note">
+  The App requests <b>no location permission</b> (<code>ACCESS_FINE_LOCATION</code> /
+  <code>ACCESS_COARSE_LOCATION</code> are not declared in the manifest). The coordinates used for
+  weather come from <b>geocoding a city name</b>, not from your device's real position &mdash; so the
+  App cannot know where you are. Open-Meteo is an open-source weather service; see its website for
+  its privacy practices. The App sends it <b>no</b> device identifier, user identifier, or photos.
+</p>
+
+<h2>4. Permissions (mapped to Play's sensitive-permission declarations)</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th><th>Can you refuse?</th></tr>
+  <tr><td><code>READ_MEDIA_IMAGES</code> (Android 13+)<br>
+          <code>READ_EXTERNAL_STORAGE</code> (&le; 12)</td>
+      <td>Read the photos you select, in order to display them</td>
+      <td>Yes (without it, no photos can be shown)</td></tr>
+  <tr><td><code>INTERNET</code></td>
+      <td>Used solely by the optional weather overlay (city name only, see §3). The App
+          declares it <b>explicitly itself</b> rather than relying on a third-party library</td>
+      <td>System-level</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code><br>
+          <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+      <td>Resident playback: the frame must stay on screen for long periods</td>
+      <td>System-level (applies on install)</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>Keep the screen on while playing</td><td>System-level</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td>
+      <td>Restore resident mode after reboot, per your settings (<b>off by default</b>)</td><td>System-level</td></tr>
+  <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td>
+      <td>Ask the system not to freeze the App, otherwise long-running playback gets killed</td>
+      <td>Yes (may be interrupted by the system if refused)</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td>
+      <td>Show the ongoing "now playing" notification required by the foreground service</td>
+      <td>Yes</td></tr>
+</table>
+<p class="note">
+  <b>About network shares</b> (SMB / WebDAV, a Pro feature): when connecting to your own NAS,
+  the address, username and password are stored <b>only on this device</b> (the password is
+  encrypted with the system keystore and is <b>not</b> included in config exports). Server
+  addresses and credentials are <b>never</b> sent to any third party and are not collected by us.
+  Home-NAS WebDAV typically offers plain HTTP only, so the App permits a plaintext connection to a
+  LAN address <b>you typed yourself</b>; it never sends anything to the internet. If your NAS uses
+  HTTPS with a self-signed certificate, the App accepts that certificate (home devices almost always
+  are self-signed) &mdash; <b>which means man-in-the-middle protection is not possible on that link</b>.
+  If that matters to you, use this feature only on a <b>trusted home LAN</b>, or use SMB
+  (which the App also connects to over the LAN only).
+</p>
+<p><b>The App does not request</b>: location, camera, microphone, contacts, calendar, phone, or SMS.
+   Its screensaver capability uses the system's existing <code>DreamService</code> mechanism and
+   requests no additional permissions.</p>
+
+<h2>5. Children</h2>
+<p>The App is not directed at children and <b>collects no one's personal information</b> (see §1),
+   so no special handling of children's data applies. Parents can let children use it to display
+   photos &mdash; it uploads nothing.</p>
+
+<h2>6. Data deletion</h2>
+<p>Because the App <b>collects and stores no server-side data</b>, there is no "your data" to delete.</p>
+<ul>
+  <li>In-app data (settings, favourite markers, hidden markers, undo history, Pro entitlement cache)
+      lives in the device private directory and is <b>fully removed on uninstall</b>.</li>
+  <li>To clear settings without uninstalling: Android Settings &rarr; Apps &rarr; this App &rarr;
+      Storage &rarr; Clear data.</li>
+</ul>
+
+<h2>7. Changes to this policy</h2>
+<p>If a future version adds any collection behaviour (for example cloud albums, which would
+   necessarily involve transferring photos), this policy will be <b>updated before the change takes
+   effect</b> and highlighted in-app.</p>
+<p>The App's <b>existing commitments do not change</b>: core features (on-device gallery, folder
+   picker, full shuffle coverage, hide a photo, real screensaver, resident playback, 20 built-in
+   music tracks) are <b>free forever, with no watermark, no time limit, and no ads</b>.</p>
+
+<h2>8. Contact us</h2>
+<p>For privacy questions, contact: <b><a href="mailto:renafool@gmail.com">renafool@gmail.com</a></b></p>
+
+<footer>
+  Google Play billing is handled by Google, which collects necessary information (such as purchase
+  tokens) under its own policies. That is <b>platform behaviour</b>, not collection by this App &mdash;
+  we <b>do not receive</b> your name, email or payment details, only a boolean "purchased" result plus
+  a purchase token (used to prevent duplicate purchases and to restore purchases).
+</footer>
+
+</main>
+
+</div>
+
+<script>
+  function setLang(l){
+    document.documentElement.lang = (l === 'zh') ? 'zh-CN' : 'en';
+    document.getElementById('zh').hidden = (l !== 'zh');
+    document.getElementById('en').hidden = (l !== 'en');
+    document.getElementById('btn-zh').setAttribute('aria-pressed', l === 'zh');
+    document.getElementById('btn-en').setAttribute('aria-pressed', l === 'en');
+    try { localStorage.setItem('pfsPrivacyLang', l); } catch (e) {}
+  }
+  (function(){
+    var saved = null;
+    try { saved = localStorage.getItem('pfsPrivacyLang'); } catch (e) {}
+    if (saved === 'en' || saved === 'zh') { setLang(saved); return; }
+    if ((navigator.language || '').toLowerCase().indexOf('zh') !== 0) setLang('en');
+  })();
+</script>
+</body>
+</html>
