@@ -5,7 +5,7 @@ This repository hosts the public privacy policy for the Android app
 
 ## Hosted page
 
-- 中文 / English: https://leitahe.github.io/yico-privacy/
+- 中文 / English: https://leitahh.github.io/yico-privacy/
 
 ## What this app does
 
